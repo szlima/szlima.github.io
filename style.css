@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Crimson+Text&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    user-select: none;
+}
+
+body{
+    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url(bg.jpg);
+    background-position: center top;
+    background-size: 100vw auto;  
+    background-repeat: no-repeat;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100vw;
+
+    color: #745749;
+    font-family: 'Crimson Text', serif;
+}
+
+main{    
+    text-align: center;
+    margin: 3%;
+}
+
+h1{    
+    font-family: 'Cookie', cursive;
+    font-size: 450%;
+    margin-top: .5rem;
+}
+
+h2{    
+    font-size: 150%;
+    font-variant: small-caps;
+    letter-spacing: .2rem;
+    word-spacing: .4rem;
+}
+
+footer{
+    padding: .3rem;
+    font-size: 70%;
+}
+
+a{    
+    text-decoration: none;
+    color: #745749;    
+}
+
+@media only screen and (min-width: 576px){
+
+    h1{
+        font-size: 600%;
+    }
+
+    h2{
+        font-size: 200%;
+    }
+
+}
+
+@media only screen and (min-height: 600px){
+
+    main{    
+        margin: 10%;
+    }
+
+}
