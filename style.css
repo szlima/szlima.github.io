@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Crimson+Text&display=swap');
 
+:root{
+    --transparente1: rgba(255, 255, 255, 0.1);
+    --transparente2: rgba(255, 255, 255, 0.5);
+    --branco: #fff;
+    --marrom: #745749;
+    --rosa-claro: #fae8e8;
+    --rosa-medio: #ecb3c2;
+    --rosa-escuro: #bb696d;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,52 +18,64 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url(img/bg1.jpg);
-    background-position: center top;
-    background-size: 100vw auto;  
-    background-repeat: no-repeat;  
+    background-image: linear-gradient(var(--rosa-escuro), var(--rosa-medio), var(--rosa-claro));
+    background-size: 100vw 100vh;
 
+    color: var(--marrom);
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70vh 30vh;
+}
+
+main{    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
-    min-height: 100vh;
-    width: 100vw;
-
-    color: #745749;
-    font-family: 'Crimson Text', serif;
+    
+    padding: 50px;
+    border-radius: 100px;    
 }
 
-main{    
-    text-align: center;
-    margin: 3%;
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 70%;
 }
 
 h1{    
     font-family: 'Cookie', cursive;
     font-size: 450%;
-    margin-top: .5rem;
 }
 
 h2{    
-    font-size: 150%;
     font-variant: small-caps;
     letter-spacing: .2rem;
     word-spacing: .4rem;
 }
 
-footer{
-    padding: .3rem;
-    font-size: 70%;
-}
-
 a{    
     text-decoration: none;
-    color: #745749;    
+    color: var(--marrom);    
 }
 
 @media only screen and (min-width: 576px){
+
+    body{
+        background-image: linear-gradient(var(--transparente1), var(--transparente1)), url(img/bg1.jpg);
+        background-position: center top;
+        background-repeat: repeat-x;
+        background-size: auto;
+        background-color: var(--branco);
+    }
 
     h1{
         font-size: 600%;
@@ -63,12 +85,19 @@ a{
         font-size: 200%;
     }
 
+    footer{
+        padding: 30px;
+    }
 }
 
-@media only screen and (min-height: 600px){
+@media only screen and (min-width: 576px) and (max-height: 750px){
 
-    main{    
-        margin: 10%;
+    body{
+        grid-template-rows: 90vh 10vh;
     }
 
+    main{
+        background-color: var(--transparente2);
+        margin: auto;
+    }
 }
