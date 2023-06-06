@@ -77,6 +77,22 @@ html{
                     color: variables.$color-beige-02;
                 }
             }
+
+            &-photo{
+                width: 100%;
+                min-height: 300px;                
+                @include mixins.flex-center;
+                @include mixins.for-tablet-landscape-up{
+                    justify-content: end;
+                }
+
+                img{
+                    width: 100%;
+                    max-width: 400px;
+                    border-radius: 50%;
+                    border: 5px solid variables.$color-brown-02;
+                }
+            }
         }
     }
 }

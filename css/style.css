@@ -80,5 +80,23 @@ html body .introduction-title p {
   font-style: italic;
   color: #dbbf98;
 }
+html body .introduction-photo {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  html body .introduction-photo {
+    justify-content: end;
+  }
+}
+html body .introduction-photo img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  border: 5px solid #1d1513;
+}
 
 /*# sourceMappingURL=style.css.map */
