@@ -63,10 +63,12 @@ html{
                 font-family: variables.$font-serif;
             }
 
-            &-title{
+            &-title, &-description{
                 width: 100%;
                 padding: 25px 0;
+            }
 
+            &-title{
                 @include mixins.for-tablet-landscape-up{
                     display: none;
                 }
@@ -91,6 +93,25 @@ html{
                     max-width: 400px;
                     border-radius: 50%;
                     border: 5px solid variables.$color-brown-02;
+                }
+            }
+
+            &-description{
+                @include mixins.for-tablet-landscape-up{
+                    display: flex;
+                    padding: 0;
+                    min-height: 180px;
+
+                    p::before{
+                        content: '\a0\a0\a0';
+                    }
+                }
+
+                p{
+                    @include mixins.for-tablet-landscape-up{
+                        width: 600px;
+                        text-align: left;
+                    }
                 }
             }
         }
