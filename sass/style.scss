@@ -57,6 +57,11 @@ html{
                 max-width: 1200px;
                 margin: 0 auto;
                 padding: 20px 100px;
+
+                background-image: url("../img/flower-image2.png");
+                background-repeat: no-repeat;
+                background-position: 95% 90%;
+                background-size: 200px;
             }
 
             p{
@@ -86,6 +91,10 @@ html{
                 @include mixins.flex-center;
                 @include mixins.for-tablet-landscape-up{
                     justify-content: end;
+                    background-image: url("../img/flower-image1.png");
+                    background-size: 300px;
+                    background-repeat: no-repeat;
+                    background-position: left top;
                 }
 
                 img{
