@@ -1,0 +1,21 @@
+@use "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .7s;
+}
+
+html{
+    font-size: 18px;
+    font-family: variables.$font-sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: variables.$color-brown-02;
+    }
+}
