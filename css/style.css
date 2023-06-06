@@ -12,10 +12,73 @@ html {
   text-align: center;
   word-wrap: break-word;
 }
+@media (min-width: 900px) {
+  html {
+    font-size: 22px;
+  }
+}
 html body {
   width: 100vw;
   height: 100vh;
   background-color: #1d1513;
+}
+html body h1 {
+  font-size: 3rem;
+  color: #cb7168;
+  margin-bottom: 10px;
+}
+html body p, html body a {
+  color: #d9d1bc;
+}
+html body a {
+  text-decoration: none;
+}
+html body .display {
+  width: 100%;
+  min-height: 500px;
+}
+@media (min-width: 900px) {
+  html body .display {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+html body .introduction {
+  width: 100%;
+  padding: 20px;
+}
+@media (min-width: 900px) {
+  html body .introduction {
+    background-color: #291d1d;
+    border-radius: 20px;
+    padding: 20px 50px;
+  }
+}
+@media (min-width: 1200px) {
+  html body .introduction {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 100px;
+  }
+}
+html body .introduction p {
+  font-family: "Gabriela", serif;
+}
+html body .introduction-title {
+  width: 100%;
+  padding: 25px 0;
+}
+@media (min-width: 900px) {
+  html body .introduction-title {
+    display: none;
+  }
+}
+html body .introduction-title p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #dbbf98;
 }
 
 /*# sourceMappingURL=style.css.map */

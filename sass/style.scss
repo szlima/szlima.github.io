@@ -1,4 +1,5 @@
 @use "variables";
+@use "mixins";
 
 *{
     margin: 0;
@@ -12,10 +13,70 @@ html{
     font-family: variables.$font-sans-serif;
     text-align: center;
     word-wrap: break-word;
+    @include mixins.for-tablet-landscape-up{
+        font-size: 22px;
+    }
 
     body{
         width: 100vw;
         height: 100vh;
         background-color: variables.$color-brown-02;
+
+        h1{
+            font-size: 3rem;
+            color: variables.$color-pink-02;
+            margin-bottom: 10px;
+        }
+
+        p, a{
+            color: variables.$color-beige-01;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .display{
+            width: 100%;
+            min-height: 500px;
+            @include mixins.for-tablet-landscape-up{
+                padding: 50px;
+                @include mixins.flex-center;
+            }
+        }
+
+        .introduction{
+            width: 100%;
+            padding: 20px;
+            @include mixins.for-tablet-landscape-up{
+                background-color: variables.$color-brown-01;
+                border-radius: 20px;
+                padding: 20px 50px;
+            }
+            @include mixins.for-desktop-up{
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px 100px;
+            }
+
+            p{
+                font-family: variables.$font-serif;
+            }
+
+            &-title{
+                width: 100%;
+                padding: 25px 0;
+
+                @include mixins.for-tablet-landscape-up{
+                    display: none;
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    color: variables.$color-beige-02;
+                }
+            }
+        }
     }
 }
