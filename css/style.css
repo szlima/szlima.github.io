@@ -42,6 +42,14 @@ html body p, html body a {
 html body a {
   text-decoration: none;
 }
+html body i {
+  font-size: 3.3rem;
+  margin: 10px;
+  color: #dca8aa;
+}
+html body i:hover {
+  color: #b3554d;
+}
 html body .display {
   width: 100%;
   min-height: 500px;
@@ -140,6 +148,16 @@ html body .info-technologies {
   width: 100%;
   padding: 30px 5px;
   background-color: #291d1d;
+}
+html body .info-technologies p {
+  margin-bottom: 20px;
+}
+html body .info-technologies-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */

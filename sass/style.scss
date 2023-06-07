@@ -32,7 +32,7 @@ html{
             font-size: 1.7rem;
             color: variables.$color-pink-02;
             letter-spacing: 1px;
-            word-spacing: 2px;    
+            word-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
@@ -43,6 +43,16 @@ html{
 
         a{
             text-decoration: none;
+        }
+
+        i{
+            font-size: 3.3rem;
+            margin: 10px;
+            color: variables.$color-pink-01;
+        }
+
+        i:hover{
+            color: variables.$color-pink-03;
         }
 
         .display{
@@ -143,7 +153,18 @@ html{
                 width: 100%;
                 padding: 30px 5px;
                 background-color: variables.$color-brown-01;
-                
+
+                p{
+                    margin-bottom: 20px;
+                }
+
+                &-set{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: auto;
+                    max-width: 600px;
+                }
             }
         }
     }
