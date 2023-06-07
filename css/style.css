@@ -28,6 +28,14 @@ html body h1 {
   color: #cb7168;
   margin-bottom: 10px;
 }
+html body h2 {
+  font-size: 1.7rem;
+  color: #cb7168;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
 html body p, html body a {
   color: #d9d1bc;
 }
@@ -122,6 +130,16 @@ html body .introduction-photo img {
     width: 600px;
     text-align: left;
   }
+}
+html body .info {
+  font-weight: 300;
+  width: 100%;
+  padding: 20px 0;
+}
+html body .info-technologies {
+  width: 100%;
+  padding: 30px 5px;
+  background-color: #291d1d;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -28,6 +28,15 @@ html{
             margin-bottom: 10px;
         }
 
+        h2{
+            font-size: 1.7rem;
+            color: variables.$color-pink-02;
+            letter-spacing: 1px;
+            word-spacing: 2px;    
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
         p, a{
             color: variables.$color-beige-01;
         }
@@ -122,6 +131,19 @@ html{
                         text-align: left;
                     }
                 }
+            }
+        }
+
+        .info{
+            font-weight: 300;
+            width: 100%;
+            padding: 20px 0;
+
+            &-technologies{
+                width: 100%;
+                padding: 30px 5px;
+                background-color: variables.$color-brown-01;
+                
             }
         }
     }
