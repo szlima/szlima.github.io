@@ -62,6 +62,11 @@ html body .display {
     align-items: center;
   }
 }
+@media (min-width: 1200px) {
+  html body .introduction, html body .info {
+    max-width: 1200px;
+  }
+}
 html body .introduction {
   width: 100%;
   padding: 20px;
@@ -75,7 +80,6 @@ html body .introduction {
 }
 @media (min-width: 1200px) {
   html body .introduction {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 100px;
     background-image: url("../img/flower-image2.png");
@@ -144,13 +148,33 @@ html body .info {
   width: 100%;
   padding: 20px 0;
 }
-html body .info-technologies {
+@media (min-width: 900px) {
+  html body .info {
+    display: flex;
+  }
+}
+html body .info-technologies, html body .info-contact {
   width: 100%;
+}
+html body .info-technologies {
   padding: 30px 5px;
   background-color: #291d1d;
 }
+@media (min-width: 900px) {
+  html body .info-technologies {
+    width: 65%;
+    border-right: 2.5px solid #291d1d;
+    background-color: initial;
+    padding: 50px 0;
+  }
+}
 html body .info-technologies p {
   margin-bottom: 20px;
+}
+@media (min-width: 900px) {
+  html body .info-technologies p {
+    margin-bottom: 50px;
+  }
 }
 html body .info-technologies-set {
   display: flex;
@@ -158,6 +182,18 @@ html body .info-technologies-set {
   justify-content: center;
   margin: auto;
   max-width: 600px;
+}
+@media (min-width: 900px) {
+  html body .info-technologies-set {
+    max-width: 700px;
+  }
+}
+@media (min-width: 900px) {
+  html body .info-contact {
+    width: 35%;
+    border-left: 2.5px solid #291d1d;
+    padding-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
