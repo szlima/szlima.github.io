@@ -42,6 +42,9 @@ html body p, html body a {
 html body a {
   text-decoration: none;
 }
+html body a:hover {
+  color: #b3554d;
+}
 html body i {
   font-size: 3.3rem;
   margin: 10px;
@@ -248,6 +251,23 @@ html body .info-contact-portfolio .button:hover {
 }
 html body .info-contact-portfolio .button:hover ion-icon {
   color: #291d1d;
+}
+html body .info-contact-social-media {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  html body .info-contact-social-media {
+    padding-top: 40px;
+    border-top: 2.5px solid #291d1d;
+  }
+}
+html body .info-contact-social-media p {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

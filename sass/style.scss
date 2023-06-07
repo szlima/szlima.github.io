@@ -45,6 +45,10 @@ html{
             text-decoration: none;
         }
 
+        a:hover{
+            color: variables.$color-pink-03;
+        }
+
         i{
             font-size: 3.3rem;
             margin: 10px;
@@ -246,6 +250,23 @@ html{
                         ion-icon{
                             color: variables.$color-brown-01;
                         }
+                    }
+                }
+
+                &-social-media{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @include mixins.for-tablet-landscape-up{
+                        padding-top: 40px;
+                        border-top: 2.5px solid variables.$color-brown-01;
+                    }
+
+                    p{
+                        display: flex;
+                        align-items: center;
+                        margin: 5px 0;
                     }
                 }
             }
