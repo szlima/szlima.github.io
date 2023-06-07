@@ -153,6 +153,10 @@ html body .info {
     display: flex;
   }
 }
+html body .info ion-icon {
+  margin-right: 10px;
+  color: #dca8aa;
+}
 html body .info-technologies, html body .info-contact {
   width: 100%;
 }
@@ -194,6 +198,56 @@ html body .info-technologies-set {
     border-left: 2.5px solid #291d1d;
     padding-left: 20px;
   }
+}
+html body .info-contact-portfolio {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  html body .info-contact-portfolio {
+    height: 30%;
+    padding-bottom: 40px;
+    border-bottom: 2.5px solid #291d1d;
+  }
+}
+html body .info-contact-portfolio .button {
+  background-color: #b3554d;
+  color: #d9d1bc;
+  border: 2px solid #d9d1bc;
+  width: 100%;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  html body .info-contact-portfolio .button {
+    width: auto;
+    border-radius: 10px;
+    padding: 20px 5px;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  html body .info-contact-portfolio .button {
+    padding: 20px 40px;
+  }
+}
+html body .info-contact-portfolio .button ion-icon {
+  color: #d9d1bc;
+  margin-right: 20px;
+}
+html body .info-contact-portfolio .button:hover {
+  background-color: #dca8aa;
+  border-color: #dca8aa;
+  color: #291d1d;
+}
+html body .info-contact-portfolio .button:hover ion-icon {
+  color: #291d1d;
 }
 
 /*# sourceMappingURL=style.css.map */
