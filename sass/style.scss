@@ -1,0 +1,295 @@
+@use "variables";
+@use "mixins";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .7s;
+}
+
+html{
+    font-size: 18px;
+    font-family: variables.$font-sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+    @include mixins.for-tablet-landscape-up{
+        font-size: 22px;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-color: variables.$color-brown-02;
+
+        h1{
+            font-size: 3rem;
+            color: variables.$color-pink-02;
+            margin-bottom: 10px;
+        }
+
+        h2{
+            font-size: 1.7rem;
+            color: variables.$color-pink-02;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        p, a{
+            color: variables.$color-beige-01;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: variables.$color-pink-03;
+        }
+
+        i{
+            font-size: 3.3rem;
+            margin: 10px;
+            color: variables.$color-pink-01;
+        }
+
+        i:hover{
+            color: variables.$color-pink-03;
+        }
+
+        .display{
+            width: 100%;
+            min-height: 500px;
+            @include mixins.for-tablet-landscape-up{
+                padding: 50px;
+                @include mixins.flex-center;
+            }
+        }
+
+        .introduction, .info{
+            @include mixins.for-desktop-up{
+                max-width: 1200px;
+            }
+        }
+
+        .introduction{
+            width: 100%;
+            padding: 20px;
+            @include mixins.for-tablet-landscape-up{
+                background-color: variables.$color-brown-01;
+                border-radius: 20px;
+                padding: 20px 50px;
+            }
+            @include mixins.for-desktop-up{
+                margin: 0 auto;
+                padding: 20px 100px;
+
+                background-image: url("../img/flower-image2.png");
+                background-repeat: no-repeat;
+                background-position: 95% 90%;
+                background-size: 200px;
+            }
+
+            p{
+                font-family: variables.$font-serif;
+            }
+
+            &-title, &-description{
+                width: 100%;
+                padding: 25px 0;
+            }
+
+            &-title{
+                @include mixins.for-tablet-landscape-up{
+                    display: none;
+                }
+
+                p{
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    color: variables.$color-beige-02;
+                }
+            }
+
+            &-photo{
+                width: 100%;
+                min-height: 300px;                
+                @include mixins.flex-center;
+                @include mixins.for-tablet-landscape-up{
+                    justify-content: end;
+                    background-image: url("../img/flower-image1.png");
+                    background-size: 300px;
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                }
+
+                img{
+                    width: 100%;
+                    max-width: 400px;
+                    border-radius: 50%;
+                    border: 5px solid variables.$color-brown-02;
+                }
+            }
+
+            &-description{
+                @include mixins.for-tablet-landscape-up{
+                    display: flex;
+                    padding: 0;
+                    min-height: 180px;
+
+                    p::before{
+                        content: '\a0\a0\a0';
+                    }
+                }
+
+                p{
+                    @include mixins.for-tablet-landscape-up{
+                        width: 600px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .info{
+            font-weight: 300;
+            width: 100%;
+            padding: 20px 0;
+            @include mixins.for-tablet-landscape-up{
+                display: flex;
+            }
+
+            ion-icon{
+                margin-right: 10px;
+                color: variables.$color-pink-01;
+            }
+
+            &-technologies, &-contact{
+                width: 100%;
+            }
+
+            &-technologies{
+                padding: 30px 5px;
+                background-color: variables.$color-brown-01;
+                @include mixins.for-tablet-landscape-up{
+                    width: 65%;
+                    border-right: 2.5px solid variables.$color-brown-01;
+                    background-color: initial;
+                    padding: 50px 0;
+                }
+
+                p{
+                    margin-bottom: 20px;
+                    @include mixins.for-tablet-landscape-up{
+                        margin-bottom: 50px;
+                    }
+                }
+
+                &-set{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: auto;
+                    max-width: 600px;
+                    @include mixins.for-tablet-landscape-up{
+                        max-width: 700px;
+                    }
+                }
+            }
+
+            &-contact{
+                @include mixins.for-tablet-landscape-up{
+                    width: 35%;
+                    border-left: 2.5px solid variables.$color-brown-01;
+                    padding-left: 20px;
+                }
+
+                &-portfolio{
+                    width: 100%;
+                    height: 200px;
+                    @include mixins.flex-center;
+                    @include mixins.for-tablet-landscape-up{
+                        height: 30%;
+                        padding-bottom: 40px;
+                        border-bottom: 2.5px solid variables.$color-brown-01;
+                    }
+
+                    .button{
+                        background-color: variables.$color-pink-03;
+                        color: variables.$color-beige-01;
+                        border: 2px solid variables.$color-beige-01;
+                        width: 100%;
+                        padding: 20px;
+                        font-size: 2rem;
+                        font-weight: 500;
+                        display: flex;
+                        justify-content: center;
+                        @include mixins.for-tablet-landscape-up{
+                            width: auto;
+                            border-radius: 10px;
+                            padding: 20px 5px;
+                            font-size: 1.5rem;
+                        }
+                        @include mixins.for-desktop-up{
+                            padding: 20px 40px;
+                        }
+
+                        ion-icon{
+                            color: variables.$color-beige-01;
+                            margin-right: 20px;
+                        }
+                    }
+
+                    .button:hover{
+                        background-color: variables.$color-pink-01;
+                        border-color: variables.$color-pink-01;
+                        color: variables.$color-brown-01;
+
+                        ion-icon{
+                            color: variables.$color-brown-01;
+                        }
+                    }
+                }
+
+                &-social-media{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    @include mixins.for-tablet-landscape-up{
+                        padding-top: 40px;
+                        border-top: 2.5px solid variables.$color-brown-01;
+                    }
+
+                    p{
+                        display: flex;
+                        align-items: center;
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+
+        footer{
+            background-color: variables.$color-brown-01;
+            width: 100%;
+            min-height: 70px;
+            @include mixins.flex-center;
+
+            p{
+                font-size: .8rem;
+                color: variables.$color-beige-02;
+                font-weight: 300;
+                @include mixins.flex-center;
+                flex-wrap: wrap;
+            }
+
+            ion-icon{
+                color: variables.$color-pink-02;
+                padding: 0 3px;
+            }
+        }
+    }
+}
