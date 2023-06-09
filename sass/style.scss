@@ -271,5 +271,25 @@ html{
                 }
             }
         }
+
+        footer{
+            background-color: variables.$color-brown-01;
+            width: 100%;
+            min-height: 70px;
+            @include mixins.flex-center;
+
+            p{
+                font-size: .8rem;
+                color: variables.$color-beige-02;
+                font-weight: 300;
+                @include mixins.flex-center;
+                flex-wrap: wrap;
+            }
+
+            ion-icon{
+                color: variables.$color-pink-02;
+                padding: 0 3px;
+            }
+        }
     }
 }

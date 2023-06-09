@@ -269,5 +269,26 @@ html body .info-contact-social-media p {
   align-items: center;
   margin: 5px 0;
 }
+html body footer {
+  background-color: #291d1d;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body footer p {
+  font-size: 0.8rem;
+  color: #dbbf98;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+html body footer ion-icon {
+  color: #cb7168;
+  padding: 0 3px;
+}
 
 /*# sourceMappingURL=style.css.map */
